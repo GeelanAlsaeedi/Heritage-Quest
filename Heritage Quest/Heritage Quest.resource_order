@@ -51,6 +51,7 @@
     {"name":"char4","order":7,"path":"sprites/char4/char4.yy",},
     {"name":"Group_24","order":27,"path":"sprites/Group_24/Group_24.yy",},
     {"name":"wheel","order":23,"path":"sprites/wheel/wheel.yy",},
+    {"name":"CharSelect","order":5,"path":"rooms/CharSelect/CharSelect.yy",},
     {"name":"Puzzel_game","order":14,"path":"sprites/Puzzel_game/Puzzel_game.yy",},
     {"name":"map_Icon","order":21,"path":"sprites/map_Icon/map_Icon.yy",},
     {"name":"screen","order":37,"path":"sprites/screen/screen.yy",},

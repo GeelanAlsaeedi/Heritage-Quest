@@ -69,6 +69,7 @@
     {"id":{"name":"char4","path":"sprites/char4/char4.yy",},},
     {"id":{"name":"Group_24","path":"sprites/Group_24/Group_24.yy",},},
     {"id":{"name":"wheel","path":"sprites/wheel/wheel.yy",},},
+    {"id":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
     {"id":{"name":"Puzzel_game","path":"sprites/Puzzel_game/Puzzel_game.yy",},},
     {"id":{"name":"map_Icon","path":"sprites/map_Icon/map_Icon.yy",},},
     {"id":{"name":"button_parent","path":"objects/button_parent/button_parent.yy",},},
@@ -96,6 +97,7 @@
     {"roomId":{"name":"characterSelect","path":"rooms/characterSelect/characterSelect.yy",},},
     {"roomId":{"name":"MapSelect","path":"rooms/MapSelect/MapSelect.yy",},},
     {"roomId":{"name":"map_preview","path":"rooms/map_preview/map_preview.yy",},},
+    {"roomId":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
