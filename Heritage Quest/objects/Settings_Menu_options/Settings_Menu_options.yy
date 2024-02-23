@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_btn_new",
+  "name": "Settings_Menu_options",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_parent","path":"objects/button_parent/button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/button_parent/button_parent.yy",},"value":"New Game",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"button_parent","path":"objects/button_parent/button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/button_parent/button_parent.yy",},"value":"Options",},
   ],
   "parent": {
     "name": "Objects",
