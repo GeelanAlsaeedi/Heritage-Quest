@@ -5,4 +5,4 @@
 
 // Inherit the parent event
 event_inherited();
-room_goto(map_preview);
+room_goto(MapPreview);

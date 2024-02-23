@@ -5,4 +5,4 @@
 
 // Inherit the parent event
 event_inherited();
-currentTab = 0; 
+room_goto(MapSelect);
