@@ -5,7 +5,4 @@
 
 // Inherit the parent event
 event_inherited();
-ds_stack_push(global.roomStack, room);
-room_goto(SettingsOptions);
-
-
+url_open("https://twitter.com/jewelsoftheeast");

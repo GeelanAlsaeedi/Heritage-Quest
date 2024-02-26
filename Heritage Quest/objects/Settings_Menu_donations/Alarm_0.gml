@@ -5,4 +5,5 @@
 
 // Inherit the parent event
 event_inherited();
-//create the page later on 
+ds_stack_push(global.roomStack, room);
+room_goto(SettingsDonations);

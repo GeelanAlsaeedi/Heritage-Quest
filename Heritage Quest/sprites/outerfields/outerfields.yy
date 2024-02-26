@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Aisha_Side",
-  "bbox_bottom": 604,
+  "name": "outerfields",
+  "bbox_bottom": 1619,
   "bbox_left": 0,
-  "bbox_right": 200,
-  "bbox_top": 8,
+  "bbox_right": 2159,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00f6cd6e-1c08-46ec-adea-895955b51180",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"424e061b-cfc8-43dd-9a93-5b59a9bb6663",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 612,
+  "height": 1620,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"edda6879-28e5-4179-811a-55fffd159e9c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"63f9e13d-9b8c-413a-a88c-db2df15f8300","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Aisha_Side",
+    "name": "outerfields",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"00f6cd6e-1c08-46ec-adea-895955b51180","path":"sprites/Aisha_Side/Aisha_Side.yy",},},},"Disabled":false,"id":"eea6727a-9c3b-4dee-8503-bfd88736111c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"424e061b-cfc8-43dd-9a93-5b59a9bb6663","path":"sprites/outerfields/outerfields.yy",},},},"Disabled":false,"id":"c677a9e4-4977-477a-afed-bd1da98b4571","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 216,
+  "width": 2160,
 }
