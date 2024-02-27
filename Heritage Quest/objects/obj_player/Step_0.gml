@@ -43,3 +43,19 @@ if (!place_meeting(x, y + moveY, obj_invisibleWall)) {
         y += sign(moveY);
     }
 }
+
+// Step Event of obj_player or any object you want to keep within the room
+
+// Horizontal boundary checking
+if (x < 0) {
+    x = 0; // Prevent moving beyond the left edge
+} else if (x > room_width - sprite_get_width(sprite_index)) {
+    x = room_width - sprite_get_width(sprite_index); // Prevent moving beyond the right edge
+}
+
+// Vertical boundary checking
+if (y < 0) {
+    y = 0; // Prevent moving beyond the top edge
+} else if (y > room_height - sprite_get_height(sprite_index)) {
+    y = room_height - sprite_get_height(sprite_index); // Prevent moving beyond the bottom edge
+}

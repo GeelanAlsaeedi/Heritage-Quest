@@ -51,7 +51,7 @@
     {"name":"Tariq_char","order":13,"path":"objects/Tariq_char/Tariq_char.yy",},
     {"name":"Settings","order":18,"path":"objects/Settings/Settings.yy",},
     {"name":"Faisal_char","order":15,"path":"objects/Faisal_char/Faisal_char.yy",},
-    {"name":"Scene1","order":10,"path":"rooms/Scene1/Scene1.yy",},
+    {"name":"outerArea","order":10,"path":"rooms/outerArea/outerArea.yy",},
     {"name":"obj_player","order":34,"path":"objects/obj_player/obj_player.yy",},
     {"name":"Riyadh_map","order":7,"path":"objects/Riyadh_map/Riyadh_map.yy",},
     {"name":"Char_preview","order":16,"path":"objects/Char_preview/Char_preview.yy",},

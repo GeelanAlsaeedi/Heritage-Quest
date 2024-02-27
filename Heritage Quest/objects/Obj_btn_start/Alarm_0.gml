@@ -6,4 +6,6 @@
 // Inherit the parent event
 event_inherited();
 room_goto(MapPreview);
-//if (room==roo
+if(room_get_name(room)=="MapPreview"){
+	room_goto(outerArea);
+}

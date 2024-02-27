@@ -24,8 +24,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": null,
-  "spriteMaskId": null,
-  "visible": true,
+  "spriteMaskId": {
+    "name": "ext",
+    "path": "sprites/ext/ext.yy",
+  },
+  "visible": false,
 }
