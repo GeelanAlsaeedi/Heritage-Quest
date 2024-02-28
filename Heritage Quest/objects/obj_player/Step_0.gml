@@ -2,6 +2,9 @@
 
 var moveX = 0;
 var moveY = 0;
+// Define the interaction distance threshold
+AddChatEntry("Sender Name", Aisha_Side, "Hello, this is the message text.");
+
 
 // Determine desired movement direction
 if (keyboard_check(vk_left)) {
@@ -58,4 +61,13 @@ if (y < 0) {
     y = 0; // Prevent moving beyond the top edge
 } else if (y > room_height - sprite_get_height(sprite_index)) {
     y = room_height - sprite_get_height(sprite_index); // Prevent moving beyond the bottom edge
+}
+
+var interactionDistance = 300; // Pixels, adjust as needed
+var nearestInteractable = instance_nearest(x, y, Aisha);
+
+ //Calculate distance to the nearest interactable object
+var distance = point_distance(x, y, nearestInteractable.x, nearestInteractable.y);
+if (distance <= interactionDistance && keyboard_check_pressed(vk_space)) { // Example: Press Spacebar to go to the next message
+     obj_chatController.isVisible = true;
 }
