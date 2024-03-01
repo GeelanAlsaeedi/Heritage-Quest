@@ -6,17 +6,20 @@ if(room_get_name(room)=="outerArea"){
 	var choices = [
     ["1) Prophet Muhammad and Abu Bakr", 1],
     ["2) Local merchants", 0],
-	["3) C) Desert travelers", 0]
+	["3) Desert travelers", 0]
 	];
 	//var choices = ["A) Prophet Muhammad and Abu Bakr ", "B) Local merchants","C) Desert travelers"];
 	AddChatEntry("Laila", Girl_Player, " I know it is......", choices);
+	if (trivia_choice != 1){
+		sheSaid= "Not quite right, but don't lose heart. Give it another try.";
+		currentMessageIndex--;
+	}else {
+		sheSaid= "Impressive! You do know our history. But there's more to the cave than just Knowledge. .";
+	}
 	AddChatEntry("Aisha", Aisha_Front, sheSaid);
 
 }
-if (trivia_choice != 1){
-	sheSaid= "Not quite right, but don't lose heart. Give it another try.";
-	currentMessageIndex--;
-}
+
 if ( keyboard_check_pressed(vk_space)) {
     // Only advance if there are messages
     if (ds_list_size(chatEntries) > 0) {

@@ -4,4 +4,4 @@ chatEntries = ds_list_create();
 currentMessageIndex = -1; // Indicates that no message is displayed yet
 isVisible = true; // Assuming you want the chat box to be potentially visible from the start
 trivia_choice = 1;
-sheSaid = "Impressive! You do know our history. But there's more to the cave than just Knowledge.";
+sheSaid ="";
