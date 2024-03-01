@@ -4,7 +4,8 @@ var moveX = 0;
 var moveY = 0;
 // Define the interaction distance threshold
 AddChatEntry("Sender Name", Aisha_Side, "Hello, this is the message text.");
-
+AddChatEntry("Sender Name", Aisha_Side, "Hello2, this is the message text.");
+AddChatEntry("Sender Name", Aisha_Side, "Hello3, this is the message text.");
 
 // Determine desired movement direction
 if (keyboard_check(vk_left)) {
@@ -63,7 +64,7 @@ if (y < 0) {
     y = room_height - sprite_get_height(sprite_index); // Prevent moving beyond the bottom edge
 }
 
-var interactionDistance = 300; // Pixels, adjust as needed
+var interactionDistance = 200; // Pixels, adjust as needed
 var nearestInteractable = instance_nearest(x, y, Aisha);
 
  //Calculate distance to the nearest interactable object
