@@ -12,11 +12,11 @@ if(room_get_name(room)=="outerArea"){
 	AddChatEntry("Laila", Girl_Player, " I know it is......", choices);
 	if (trivia_choice != 1){
 		sheSaid= "Not quite right, but don't lose heart. Give it another try.";
-		currentMessageIndex--;
 	}else {
-		sheSaid= "Impressive! You do know our history. But there's more to the cave than just Knowledge. .";
+		sheSaid= "Impressive! You do know our history. But there's more to the cave than just Knowledge.";
 	}
 	AddChatEntry("Aisha", Aisha_Front, sheSaid);
+	AddChatEntry("Aisha", Aisha_Front, "Do you know about our tradition of visiting this cave? What do the \ncitizens of Makkah often seek there?");
 
 }
 

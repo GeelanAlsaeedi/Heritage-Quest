@@ -87,12 +87,25 @@ if (distance <= interactionDistance && keyboard_check_pressed(vk_escape)) {
 var entry = ds_list_find_value(obj_chatController.chatEntries, obj_chatController.currentMessageIndex);
 if (entry != undefined && ds_map_exists(entry, "choices")) {
     var choiceList = ds_map_find_value(entry, "choices");
-    // If choices are expected to be an array
-    if (choiceList != undefined) {
-        // Directly iterate over the array or handle as needed
-        for (var i = 0; i < array_length_1d(choiceList); i++) {
-            
-        }
+    // Assume the choices are directly mapped to keys "1", "2", and "3"
+    if (keyboard_check_pressed(ord("1"))) {
+        // Handle the first choice
+        obj_chatController.trivia_choice = choiceList[0][1];
+        obj_chatController.currentMessageIndex++;
+    } else if (keyboard_check_pressed(ord("2"))) {
+        // Handle the second choice
+        obj_chatController.trivia_choice = choiceList[1][1];
+        obj_chatController.currentMessageIndex++;
+    } else if (keyboard_check_pressed(ord("3"))) {
+        // Handle the third choice
+        obj_chatController.trivia_choice = choiceList[2][1];
+        obj_chatController.currentMessageIndex++;
+    }
+    // Check to hide the chat box if we've gone past the last message
+    if (obj_chatController.currentMessageIndex >= ds_list_size(obj_chatController.chatEntries)) {
+        obj_chatController.isVisible = false;
     }
 }
+
+
 
