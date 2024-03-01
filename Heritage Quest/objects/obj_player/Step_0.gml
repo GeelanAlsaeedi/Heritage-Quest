@@ -3,9 +3,8 @@
 var moveX = 0;
 var moveY = 0;
 // Define the interaction distance threshold
-AddChatEntry("Sender Name", Aisha_Side, "Hello, this is the message text.");
-AddChatEntry("Sender Name", Aisha_Side, "Hello2, this is the message text.");
-AddChatEntry("Sender Name", Aisha_Side, "Hello3, this is the message text.");
+AddChatEntry("Aisha", Aisha_Front, "Greetings, traveler! I see you're interested in the mysteries of our ancient cave. \nBut first, let's see how much you already know.");
+AddChatEntry("Aisha", Aisha_Front, "Tell me, who found sanctuary in the Thour Cave during a perilous time?");
 
 // Determine desired movement direction
 if (keyboard_check(vk_left)) {
@@ -65,10 +64,35 @@ if (y < 0) {
 }
 
 var interactionDistance = 200; // Pixels, adjust as needed
-var nearestInteractable = instance_nearest(x, y, Aisha);
+var distance;
+if(room_get_name(room)=="outerArea"){
+	var nearestAisha = instance_nearest(x, y, Aisha);
+	distance = point_distance(x, y, nearestAisha.x, nearestAisha.y);
 
- //Calculate distance to the nearest interactable object
-var distance = point_distance(x, y, nearestInteractable.x, nearestInteractable.y);
+}
+
+//var nearestAbu = instance_nearest(x, y, AbuYasser);
+//var distanceAbu = point_distance(x, y, nearestAbu.x, nearestAbu.y);
+
+//var nearestAmal = instance_nearest(x, y, Amal);
+//var distanceAmal = point_distance(x, y, nearestAmal.x, nearestAmal.y);
+
 if (distance <= interactionDistance && keyboard_check_pressed(vk_space)) { // Example: Press Spacebar to go to the next message
      obj_chatController.isVisible = true;
 }
+if (distance <= interactionDistance && keyboard_check_pressed(vk_escape)) {
+	     obj_chatController.isVisible = false;
+}
+
+var entry = ds_list_find_value(obj_chatController.chatEntries, obj_chatController.currentMessageIndex);
+if (entry != undefined && ds_map_exists(entry, "choices")) {
+    var choiceList = ds_map_find_value(entry, "choices");
+    // If choices are expected to be an array
+    if (choiceList != undefined) {
+        // Directly iterate over the array or handle as needed
+        for (var i = 0; i < array_length_1d(choiceList); i++) {
+            
+        }
+    }
+}
+
