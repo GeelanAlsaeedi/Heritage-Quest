@@ -25,7 +25,9 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
 			var ypos = 1700;
             for (var i = 0; i < array_length_1d(choiceList); i++) {
                 var choice = choiceList[i];
-				draw_text(600, ypos, choice);
+				var choiceText = choice[0]; // The text of the choice
+				var nextIndex = choice[1]; // The index or identifier for the next action
+				draw_text(600, ypos, choice[0]);
 				ypos = ypos + 100;
             }
         }
