@@ -8,13 +8,15 @@ if(room_get_name(room)=="outerArea"){
     ["2) Local merchants", 0],
 	["3) Desert travelers", 0]
 	];
+	if (obj_chatController.trivia_choice == 1) {
+    // Player made the correct choice
+    sheSaid="Impressive! You do know our history. But there's more to the cave than just Knowledge.";
+} else {
+    // Player made an incorrect choice
+    sheSaid="Not quite right, but don't lose heart. Give it another try.";
+}
 	//var choices = ["A) Prophet Muhammad and Abu Bakr ", "B) Local merchants","C) Desert travelers"];
 	AddChatEntry("Laila", Girl_Player, " I know it is......", choices);
-	if (trivia_choice != 1){
-		sheSaid= "Not quite right, but don't lose heart. Give it another try.";
-	}else {
-		sheSaid= "Impressive! You do know our history. But there's more to the cave than just Knowledge.";
-	}
 	AddChatEntry("Aisha", Aisha_Front, sheSaid);
 	AddChatEntry("Aisha", Aisha_Front, "Do you know about our tradition of visiting this cave? What do the \ncitizens of Makkah often seek there?");
 
