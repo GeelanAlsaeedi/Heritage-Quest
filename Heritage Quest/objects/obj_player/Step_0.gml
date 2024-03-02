@@ -3,9 +3,6 @@
 var moveX = 0;
 var moveY = 0;
 // Define the interaction distance threshold
-AddChatEntry("Aisha", Aisha_Front, "Greetings, traveler! I see you're interested in the mysteries of our ancient cave. \nBut first, let's see how much you already know.");
-AddChatEntry("Aisha", Aisha_Front, "Tell me, who found sanctuary in the Thour Cave during a perilous time?");
-
 // Determine desired movement direction
 if (keyboard_check(vk_left)) {
     moveX -= 1;
@@ -68,51 +65,52 @@ var distance=0;
 if(room_get_name(room)=="outerArea"){
 	var nearestAisha = instance_nearest(x, y, Aisha);
 	distance = point_distance(x, y, nearestAisha.x, nearestAisha.y);
+	if (distance <= interactionDistance && keyboard_check_pressed(vk_space)) { // Example: Press Spacebar to go to the next message
+     obj_chatController.isVisible = true;
+}
+if (keyboard_check_pressed(vk_escape)) {
+	     obj_chatController.isVisible = false;
+}
 
 }
-if(room_get_name(room)=="Thour"){
-	for (var i = 0; i < ds_list_size(obj_chatController.chatEntries); i++) {
-    var entry = ds_list_find_value(obj_chatController.chatEntries, i);
-    ds_map_destroy(entry);
-}
-	var nearestAbu = instance_nearest(x, y, AbuYasser);
-	var distance = point_distance(x, y, nearestAbu.x, nearestAbu.y);
-}
+//if(room_get_name(room)=="Thour"){
+//	for (var i = 0; i < ds_list_size(obj_chatController.chatEntries); i++) {
+//    var entry = ds_list_find_value(obj_chatController.chatEntries, i);
+//    ds_map_destroy(entry);
+//}
+//	var nearestAbu = instance_nearest(x, y, AbuYasser);
+//	var distance = point_distance(x, y, nearestAbu.x, nearestAbu.y);
+//}
 //var nearestAbu = instance_nearest(x, y, AbuYasser);
 //var distanceAbu = point_distance(x, y, nearestAbu.x, nearestAbu.y);
 
 //var nearestAmal = instance_nearest(x, y, Amal);
 //var distanceAmal = point_distance(x, y, nearestAmal.x, nearestAmal.y);
 
-if (distance <= interactionDistance && keyboard_check_pressed(vk_space)) { // Example: Press Spacebar to go to the next message
-     obj_chatController.isVisible = true;
-}
-if (distance <= interactionDistance && keyboard_check_pressed(vk_escape)) {
-	     obj_chatController.isVisible = false;
-}
 
-var entry = ds_list_find_value(obj_chatController.chatEntries, obj_chatController.currentMessageIndex);
-if (entry != undefined && ds_map_exists(entry, "choices")) {
-    var choiceList = ds_map_find_value(entry, "choices");
-    // Assume the choices are directly mapped to keys "1", "2", and "3"
-    if (keyboard_check_pressed(ord("1"))) {
-        // Handle the first choice
-        obj_chatController.trivia_choice = choiceList[0][1];
-        obj_chatController.currentMessageIndex++;
-    } else if (keyboard_check_pressed(ord("2"))) {
-        // Handle the second choice
-        obj_chatController.trivia_choice = choiceList[1][1];
-        obj_chatController.currentMessageIndex++;
-    } else if (keyboard_check_pressed(ord("3"))) {
-        // Handle the third choice
-        obj_chatController.trivia_choice = choiceList[2][1];
-        obj_chatController.currentMessageIndex++;
-    }
-    // Check to hide the chat box if we've gone past the last message
-    if (obj_chatController.currentMessageIndex >= ds_list_size(obj_chatController.chatEntries)) {
-        obj_chatController.isVisible = false;
-    }
-}
+
+//var entry = ds_list_find_value(obj_chatController.chatEntries, obj_chatController.currentMessageIndex);
+//if (entry != undefined && ds_map_exists(entry, "choices")) {
+//    var choiceList = ds_map_find_value(entry, "choices");
+//    // Assume the choices are directly mapped to keys "1", "2", and "3"
+//    if (keyboard_check_pressed(ord("1"))) {
+//        // Handle the first choice
+//        obj_chatController.trivia_choice = choiceList[0][1];
+//        obj_chatController.currentMessageIndex++;
+//    } else if (keyboard_check_pressed(ord("2"))) {
+//        // Handle the second choice
+//        obj_chatController.trivia_choice = choiceList[1][1];
+//        obj_chatController.currentMessageIndex++;
+//    } else if (keyboard_check_pressed(ord("3"))) {
+//        // Handle the third choice
+//        obj_chatController.trivia_choice = choiceList[2][1];
+//        obj_chatController.currentMessageIndex++;
+//    }
+//    // Check to hide the chat box if we've gone past the last message
+//    if (obj_chatController.currentMessageIndex >= ds_list_size(obj_chatController.chatEntries)) {
+//        obj_chatController.isVisible = false;
+//    }
+//}
 
 
 

@@ -10,13 +10,13 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
 		draw_sprite_ext(image,0,1780,800,2,2,0,c_white,1);
 		draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
 		draw_text(50 , 1535, name);
-	}else {
+	} else {
     draw_sprite_ext(image,0,1984,800,2,2,0,c_white,1);
 	}
 	if (name == "Laila"){
 	draw_sprite_ext(chat_holder_player,0,0,1440,1.3,1.3,0,c_white,1);
 	draw_text(130 , 1535, name);
-	}else if (name!="Abu Yasser"){
+	} else if (name!="Abu Yasser"){
 	draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
 	draw_text(130 , 1535, name);
 	}
