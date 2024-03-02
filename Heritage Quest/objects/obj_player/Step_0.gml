@@ -64,13 +64,16 @@ if (y < 0) {
 }
 
 var interactionDistance = 200; // Pixels, adjust as needed
-var distance;
+var distance=0;
 if(room_get_name(room)=="outerArea"){
 	var nearestAisha = instance_nearest(x, y, Aisha);
 	distance = point_distance(x, y, nearestAisha.x, nearestAisha.y);
 
 }
-
+if(room_get_name(room)=="Thour"){
+	var nearestAbu = instance_nearest(x, y, AbuYasser);
+	var distance = point_distance(x, y, nearestAbu.x, nearestAbu.y);
+}
 //var nearestAbu = instance_nearest(x, y, AbuYasser);
 //var distanceAbu = point_distance(x, y, nearestAbu.x, nearestAbu.y);
 

@@ -12,10 +12,10 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
 	}else {
 	draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
 	}
-	draw_text(130 , 1550, name);
+	draw_text(130 , 1535, name);
 	draw_set_color(c_black);
 	draw_set_font(chat_font);
-	draw_text(150, 1700, text);
+	draw_text(150, 1750, text);
 
     // Check if the current message has choices
     if (ds_map_exists(entry, "choices")) {
