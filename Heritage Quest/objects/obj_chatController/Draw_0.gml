@@ -5,14 +5,21 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
     var name = ds_map_find_value(entry, "name");
     var image = ds_map_find_value(entry, "image");
     var text = ds_map_find_value(entry, "text");
-
+	
+	if(name=="Abu Yasser"){
+		draw_sprite_ext(image,0,1780,800,2,2,0,c_white,1);
+		draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
+		draw_text(50 , 1535, name);
+	}else {
     draw_sprite_ext(image,0,1984,800,2,2,0,c_white,1);
+	}
 	if (name == "Laila"){
 	draw_sprite_ext(chat_holder_player,0,0,1440,1.3,1.3,0,c_white,1);
-	}else {
-	draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
-	}
 	draw_text(130 , 1535, name);
+	}else if (name!="Abu Yasser"){
+	draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
+	draw_text(130 , 1535, name);
+	}
 	draw_set_color(c_black);
 	draw_set_font(chat_font);
 	draw_text(150, 1750, text);

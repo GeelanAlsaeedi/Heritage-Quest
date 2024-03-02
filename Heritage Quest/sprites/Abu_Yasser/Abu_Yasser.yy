@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Abu_Yasser",
-  "bbox_bottom": 1603,
-  "bbox_left": 29,
-  "bbox_right": 995,
-  "bbox_top": 224,
+  "bbox_bottom": 773,
+  "bbox_left": 2,
+  "bbox_right": 542,
+  "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1e3fd3b6-ab6d-4053-adeb-6d2b7cf80a8f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"502e13c1-b970-4422-93f3-4b40d925fb13",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1792,
+  "height": 774,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"32f265dd-f9c3-4bb8-bacf-bce196b78fff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0bdca02e-6f32-4cd9-aced-b32b054c1af8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1e3fd3b6-ab6d-4053-adeb-6d2b7cf80a8f","path":"sprites/Abu_Yasser/Abu_Yasser.yy",},},},"Disabled":false,"id":"4309617f-3c58-41d6-bfa2-798771b4c03e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"502e13c1-b970-4422-93f3-4b40d925fb13","path":"sprites/Abu_Yasser/Abu_Yasser.yy",},},},"Disabled":false,"id":"f6d372d2-d0eb-4a29-ae70-aac46f814f17","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1024,
+  "width": 545,
 }

@@ -37,6 +37,19 @@ if(room_get_name(room)=="outerArea"){
 	AddChatEntry("Aisha", Aisha_Front, "These pieces form a map to the mountain. But like all journeys worth taking,\nyou must put in the effort to find your way. Solve this, \nand the path shall reveal itself.");
 	}
 if(room_get_name(room)=="Thour"){
+	AddChatEntry("Abu Yasser", Abu_Yasser, "Ah, a new face seeking the secrets of the past. Welcome to Thour Cave,\nwhere history whispers from every stone.");
+	AddChatEntry("Laila", Girl_Player, "I've heard there's much to learn here. What can you tell me about this place?");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "This cave holds many tales, but one of my favorites is about a humble\npigeon, a creature that played a crucial role in protecting the Prophet Muhammad\nduring a time of great peril.");
+	AddChatEntry("Laila", Girl_Player, "A pigeon? How did it protect the Prophet?");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "when the Prophet and his companion were hiding in this very cave,\n a pigeon built its nest at the entrance. Those pursuing them thought the\nuntouched nest meant the cave was empty, thus moving on. ");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "Since then, in Makkah, we honor pigeons and spiders, \nnever harming them, as they once protected our Prophet.");
+	AddChatEntry("Laila", Girl_Player, "That's an incredible story.");
+	AddChatEntry("Laila", Girl_Player, "Now I really want to explore and uncover the secrets of this historic place.");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "Can I ask for a favor? I am an old man and need help with this");
+	AddChatEntry("Laila", Girl_Player, "What kind of favor?");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "My pigeon, the most special of them all, has not returned to me. Can you find her for me?");
+	AddChatEntry("Laila", Girl_Player, "Certainly! How will I recognize her?");
+	AddChatEntry("Abu Yasser", Abu_Yasser, "She has a unique marking, a white feather in the shape of a crescent\n among her grey feathers. Bring her back, \nand I'll grant you access to the cave");
 	
 }
 if ( keyboard_check_pressed(vk_space)) {

@@ -71,6 +71,10 @@ if(room_get_name(room)=="outerArea"){
 
 }
 if(room_get_name(room)=="Thour"){
+	for (var i = 0; i < ds_list_size(obj_chatController.chatEntries); i++) {
+    var entry = ds_list_find_value(obj_chatController.chatEntries, i);
+    ds_map_destroy(entry);
+}
 	var nearestAbu = instance_nearest(x, y, AbuYasser);
 	var distance = point_distance(x, y, nearestAbu.x, nearestAbu.y);
 }

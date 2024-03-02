@@ -24,7 +24,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
     "name": "Abu_Yasser",
     "path": "sprites/Abu_Yasser/Abu_Yasser.yy",
