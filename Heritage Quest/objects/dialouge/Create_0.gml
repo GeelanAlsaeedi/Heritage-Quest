@@ -10,5 +10,5 @@ showing_dialog = false;
 
 current_dialog = {};
 
-alpha = 0;
+//alpha = 0;
 

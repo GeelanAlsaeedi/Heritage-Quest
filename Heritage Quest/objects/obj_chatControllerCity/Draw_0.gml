@@ -5,18 +5,18 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
     var name = ds_map_find_value(entry, "name");
     var image = ds_map_find_value(entry, "image");
     var text = ds_map_find_value(entry, "text");
-	
-	if(name=="Aisha"){
+
+	if(name=="Amal"){
 	draw_set_color(c_white);
 	draw_set_font(menu_font);
-	draw_sprite_ext(image,0,1984,800,2,2,0,c_white,1);
+	draw_sprite_ext(image,0,1152,600,1,1,0,c_white,1);
 	draw_sprite_ext(chat_holder,0,0,1440,1.3,1.3,0,c_white,1);
-	draw_text(130 , 1535, name);
+	draw_text(50 , 1535, name);
 	draw_set_color(c_black);
 	draw_set_font(chat_font);
 	draw_text(150, 1750, text);
-	}
-	else if (name == "Laila"){
+} 
+if (name == "Laila"){
 	draw_set_color(c_white);
 	draw_set_font(menu_font);
 	draw_sprite_ext(image,0,2584,800,-2,2,0,c_white,1);
@@ -25,7 +25,7 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
 	draw_set_color(c_black);
 	draw_set_font(chat_font);
 	draw_text(150, 1750, text);
-	}
+} 
 
     // Check if the current message has choices
     if (ds_map_exists(entry, "choices")) {
@@ -34,10 +34,11 @@ if (isVisible && currentMessageIndex >= 0 && currentMessageIndex < ds_list_size(
         if (choiceList != undefined && is_array(choiceList)) {
 			var ypos = 1700;
             for (var i = 0; i < array_length_1d(choiceList); i++) {
+				draw_set_color(c_white);
                 var choice = choiceList[i];
 				var choiceText = choice[0]; // The text of the choice
 				var nextIndex = choice[1]; // The index or identifier for the next action
-				draw_text(600, ypos, choice[0]);
+				draw_text(1100, ypos, choice[0]);
 				ypos = ypos + 100;
             }
         }

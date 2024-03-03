@@ -6,7 +6,7 @@ function Dialogue() constructor {
 	
 	add = function(_name,_sprite, _message) {
 		array_push(_dialogs, {
-			name: _name,
+			named: _name,
 			sprite: _sprite,
 			message: _message,
 		});

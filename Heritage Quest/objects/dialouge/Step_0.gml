@@ -12,6 +12,6 @@ if(showing_dialog == false) {
 } else {
 	if(keyboard_check_released(key_next)) {
 		showing_dialog = false;
-		alpha = 0;
+		//alpha = 0;
 	}
 }

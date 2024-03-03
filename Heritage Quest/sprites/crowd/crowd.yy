@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "crowd",
-  "bbox_bottom": 374,
+  "bbox_bottom": 262,
   "bbox_left": 0,
-  "bbox_right": 645,
-  "bbox_top": 6,
+  "bbox_right": 512,
+  "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7dd4085-f4bd-4918-8460-68aa80e3db26",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c8474ba2-5d2b-41f9-824c-cdaa11af5ce8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 378,
+  "height": 265,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"de04e1b4-94a1-4cfc-8533-4d02b219a853","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"43d62068-2360-4c2a-aee6-16aefbe12512","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e7dd4085-f4bd-4918-8460-68aa80e3db26","path":"sprites/crowd/crowd.yy",},},},"Disabled":false,"id":"3c674821-412d-4daf-8180-4e4b4a12b246","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c8474ba2-5d2b-41f9-824c-cdaa11af5ce8","path":"sprites/crowd/crowd.yy",},},},"Disabled":false,"id":"74333e21-e4e2-4bb5-9bde-5d9fe453968f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 660,
+  "width": 513,
 }

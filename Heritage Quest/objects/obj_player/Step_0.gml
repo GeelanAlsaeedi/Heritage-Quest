@@ -43,7 +43,25 @@ if (!place_meeting(x, y + moveY, obj_invisibleWall)) {
         y += sign(moveY);
     }
 }
+// Check for horizontal collisions
+if (!place_meeting(x + moveX, y, croweds)) {
+    x += moveX;
+} else {
+    // Optional: Adjust x position to avoid "sticking" to the wall
+    while (!place_meeting(x + sign(moveX), y, croweds) && moveX != 0) {
+        x += sign(moveX);
+    }
+}
 
+// Check for vertical collisions
+if (!place_meeting(x, y + moveY, croweds)) {
+    y += moveY;
+} else {
+    // Optional: Adjust y position to avoid "sticking" to the wall
+    while (!place_meeting(x, y + sign(moveY), croweds) && moveY != 0) {
+        y += sign(moveY);
+    }
+}
 // Step Event of obj_player or any object you want to keep within the room
 
 // Horizontal boundary checking
@@ -70,6 +88,17 @@ if(room_get_name(room)=="outerArea"){
 }
 if (keyboard_check_pressed(vk_escape)) {
 	     obj_chatController.isVisible = false;
+}
+
+}
+if(room_get_name(room)=="MiddleCity"){
+	var nearestcrowd = instance_nearest(x, y, croweds);
+	distance = point_distance(x, y, nearestcrowd.x, nearestcrowd.y);
+	if (distance <= interactionDistance && keyboard_check_pressed(vk_space)) { // Example: Press Spacebar to go to the next message
+     obj_chatControllerCity.isVisible = true;
+}
+if (keyboard_check_pressed(vk_escape)) {
+	     obj_chatControllerCity.isVisible = false;
 }
 
 }
